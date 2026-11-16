@@ -1,0 +1,31 @@
+categorize_transactions:
+  description: >
+    Use the Transaction Loader tool to load the transactions CSV located at {file_path}.
+    Report the total spend per category for every month present in the data, plus the
+    overall total spend per month. Include the month-over-month percent change the tool
+    reports for each category.
+  expected_output: >
+    A clear breakdown of monthly spend per category, the percent change for each
+    category, and the total spend per month.
+
+analyze_spending_trends:
+  description: >
+    Using the categorized totals and percent changes from the previous task, identify
+    the category with the largest percent increase and the category with the largest
+    percent decrease. Briefly explain what is likely driving the biggest increase and
+    why it is worth the person's attention.
+  expected_output: >
+    A short analysis naming the fastest-growing and fastest-shrinking categories with
+    their percent changes, and an explanation of the biggest increase.
+
+generate_financial_report:
+  description: >
+    Using the categorized totals and the trend analysis, write a personal financial
+    health report. Assign an overall health_status of "healthy", "warning", or
+    "critical" based on how many categories are trending up sharply and how large
+    those increases are relative to prior months. Provide between 2 and 4 specific,
+    prioritized recommendations tied directly to the categories driving the biggest
+    overspend.
+  expected_output: >
+    A financial health report with a short summary, the top overspend category, a
+    health_status of healthy, warning or critical, and 2 to 4 actionable recommendations.
